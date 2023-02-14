@@ -8,91 +8,53 @@
     </head>
     <body>
         <h1 class="text-center">Welcome to Calculate.Me</h1>
-        <div class="container ">
-            <!--<div class="container">
-                <input class="input" type="text">
-            </div>-->
-            <!-- this is a calculator -->
-            <div class="calculator">
-            <div>
-                <!--<form>
-                    
-                    <div class="display">
-                        <input type="text" name ="display">
-                        
-                    </div>
-                        <div>
-                            <input type="button" name ="button" value="AC" onclick="display.value = '' " class="operator">
-                            <input type="button" name ="button" value="Del" onclick="display.value = display.value.toString().slice(0,-1) " class="operator">
-                            <input type="button" name ="button" value="." onclick="display.value += '.' " class="operator">
-                            <input type="button" name ="button" value="/" onclick="display.value += '/' " class="operator"> 
-                        </div>
-                        <div>
-                            <input type="button" name ="button" value="7" onclick="display.value += '7' ">
-                            <input type="button" name ="button" value="8" onclick="display.value += '8' ">
-                            <input type="button" name ="button" value="9" onclick="display.value += '9' ">
-                            <input type="button" name ="button" value="*" onclick="display.value += '*' " class="operator"> 
-                             
-                        </div>
-                        <div>
-                            <input type="button" name ="button" value="4" onclick="display.value += '4' ">
-                            <input type="button" name ="button" value="5" onclick="display.value += '5' ">
-                            <input type="button" name ="button" value="6" onclick="display.value += '6' ">
-                            <input type="button" name ="button" value="+" onclick="display.value += '+' " class="operator"> 
-                        </div>
-                        <div>
-                            <input type="button" name ="button" value="1" onclick="display.value += '1' ">
-                            <input type="button" name ="button" value="2" onclick="display.value += '2' ">
-                            <input type="button" name ="button" value="3" onclick="display.value += '3' ">
-                            <input type="button" name ="button" value="-" onclick="display.value += '-' " class="operator"> 
-                        </div>
-                        <div>
-                            <input type="button" name ="button" value="00">
-                            <input type="button" name ="button" value="0">
-                            <input type="button" name ="button" value="=" onclick="display.value = eval(display.value)" class="equal operator">
-                             
-                        </div>
+        <div class="container shadow ">
+           
+        <div class="calculator">
+                
+                
+            
+            <div class="row">
+                <input class="input screen" type="text"/>
+            </div>
+              <div class="keypad">
+              <div class="row">
+                <button class="btn clear">AC</button>
+                <button class="btn number">.</button>
+                <button class="btn back">C</button>
+                <button class="btn operator">%</button>
+              </div>
+              <div class="row">
+                <button class="btn number">7</button>
+                <button class="btn number">8</button>
+                <button class="btn number">9</button>
+                <button class="btn operator">*</button>
+              </div>
+              <div class="row">
+                <button class="btn number">4</button>
+                <button class="btn number">5</button>
+                <button class="btn number">6</button>
+                <button class="btn operator">/</button>
+              </div>
+              <div class="row">
+                <button class="btn number">1</button>
+                <button class="btn number">2</button>
+                <button class="btn number">3</button>
+                <button class="btn operator">+</button>
+              </div>
+              <div class="row">
+                <button class="btn number">0</button>
+                
+                <button class="btn operator">-</button>
+                <button class="btn equal" >=</button>
+              </div>
+            </div>
+            <script src="script.js"></script>
+        
+        </div>
+        </div>
+    </div>
+</body>
 
                     
-                </form>-->
-                <div class="row">
-                    <input class="input" type="text"/>
-                  </div>
-                  <div class="row">
-                    <button class="clear">AC</button>
-                    <button class="number">.</button>
-                    <button class="back">C</button>
-                    <button class="operator">%</button>
-                  </div>
-                  <div class="row">
-                    <button class="number">7</button>
-                    <button class="number">8</button>
-                    <button class="number">9</button>
-                    <button class="operator">*</button>
-                  </div>
-                  <div class="row">
-                    <button class="number">4</button>
-                    <button class="number">5</button>
-                    <button class="number">6</button>
-                    <button class="operator">/</button>
-                  </div>
-                  <div class="row">
-                    <button class="number">1</button>
-                    <button class="number">2</button>
-                    <button class="number">3</button>
-                    <button class="operator">+</button>
-                  </div>
-                  <div class="row">
-                    <button class="number">0</button>
-                    
-                    <button class="operator">-</button>
-                    <button class="equal" >=</button>
-                  </div>
-                </div>
-                <script src="script.js"></script>
-            
-            </div>
-            </div>
-        </div>
-    </body>
     
