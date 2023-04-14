@@ -21,33 +21,62 @@ Array.from(buttons).forEach((button)=>{
       }
   })
 })*/
-const numButtons = document.querySelectorAll('.number');
-const operatorButtons = document.querySelectorAll('.operator');
-const clearButton = document.querySelector('.clear');
-const equalButton = document.querySelector('.equal');
-const backButton = document.querySelector('.back');
-const display = document.querySelector('.input');
+// const numButtons = document.querySelectorAll('.number');
+// const operatorButtons = document.querySelectorAll('.operator');
+// const clearButton = document.querySelector('.clear');
+// const equalButton = document.querySelector('.equal');
+// const backButton = document.querySelector('.back');
+// const display = document.querySelector('.input');
 
-numButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    display.value += button.innerHTML;
-  });
-});
+// numButtons.forEach(button => {
+//   button.addEventListener('click', () => {
+//     display.value += button.innerHTML;
+//   });
+// });
 
-operatorButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    display.value += button.innerHTML;
-  });
-});
+// operatorButtons.forEach(button => {
+//   button.addEventListener('click', () => {
+//     display.value += button.innerHTML;
+//   });
+// });
 
-clearButton.addEventListener('click', () => {
-  display.value = '';
-});
+// clearButton.addEventListener('click', () => {
+//   display.value = '';
+// });
 
-equalButton.addEventListener('click', () => {
-  display.value = eval(display.value);
-});
+// equalButton.addEventListener('click', () => {
+//   display.value = eval(display.value);
+// });
 
-backButton.addEventListener('click', () => {
-  display.value = display.value.slice(0, -1);
-});
+// backButton.addEventListener('click', () => {
+//   display.value = display.value.slice(0, -1);
+// });
+
+//3rd attempt
+let input = document.getElementById('inputBox');
+let buttons = document.querySelectorAll('button');
+
+let string = "";
+let arr = Array.from(buttons);
+arr.forEach(button => {
+    button.addEventListener('click', (e) =>{
+        if(e.target.innerHTML == '='){
+            string = eval(string);
+            input.value = string;
+        }
+
+        else if(e.target.innerHTML == 'AC'){
+            string = "";
+            input.value = string;
+        }
+        else if(e.target.innerHTML == 'DEL'){
+            string = string.substring(0, string.length-1);
+            input.value = string;
+        }
+        else{
+            string += e.target.innerHTML;
+            input.value = string;
+        }
+        
+    })
+})

@@ -1,60 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Calculate.Me</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet"  href="util.css">
-    </head>
-    <body>
-        <h1 class="text-center">Welcome to Calculate.Me</h1>
-        <div class="container shadow ">
-           
-        <div class="calculator">
-                
-                
-            
-            <div class="row">
-                <input class="input screen" type="text"/>
-            </div>
-              <div class="keypad">
-              <div class="row">
-                <button class="btn clear">AC</button>
-                <button class="btn number">.</button>
-                <button class="btn back">C</button>
-                <button class="btn operator">%</button>
-              </div>
-              <div class="row">
-                <button class="btn number">7</button>
-                <button class="btn number">8</button>
-                <button class="btn number">9</button>
-                <button class="btn operator">*</button>
-              </div>
-              <div class="row">
-                <button class="btn number">4</button>
-                <button class="btn number">5</button>
-                <button class="btn number">6</button>
-                <button class="btn operator">/</button>
-              </div>
-              <div class="row">
-                <button class="btn number">1</button>
-                <button class="btn number">2</button>
-                <button class="btn number">3</button>
-                <button class="btn operator">+</button>
-              </div>
-              <div class="row">
-                <button class="btn number">0</button>
-                
-                <button class="btn operator">-</button>
-                <button class="btn equal" >=</button>
-              </div>
-            </div>
-            <script src="script.js"></script>
-        
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <input type="text" id="inputBox" placeholder="0" />
+        <div>
+          <button class="button operator">AC</button>
+          <button class="button operator">DEL</button>
+          <button class="button operator">%</button>
+          <button class="button operator">/</button>
         </div>
+        <div>
+          <button class="button">7</button>
+          <button class="button">8</button>
+          <button class="button">9</button>
+          <button class="button operator">*</button>
         </div>
-    </div>
-</body>
+        <div>
+          <button class="button">4</button>
+          <button class="button">5</button>
+          <button class="button">6</button>
+          <button class="button operator">-</button>
+        </div>
+        <div>
+          <button class="button">1</button>
+          <button class="button">2</button>
+          <button class="button">3</button>
+          <button class="button operator">+</button>
+        </div>
 
-                    
-    
+        <div>
+          <button class="button">00</button>
+          <button class="button">0</button>
+          <button class="button">.</button>
+          <button class="button equalBtn">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
